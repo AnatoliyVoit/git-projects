@@ -28,7 +28,7 @@ public class Exersice2_3 {
 			System.out.println(dictionary.hashCode());
 		}
 //		Set<String> list = new HashSet<String>(Arrays.asList(array));
-		
+		System.out.println("Hi!");
 	}
 
 }
