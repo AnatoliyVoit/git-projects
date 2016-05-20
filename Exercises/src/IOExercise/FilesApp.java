@@ -34,7 +34,7 @@ public class FilesApp {
         } 
         try(FileWriter writer = new FileWriter("D:\\Students\\Anatoliy\\git\\git-projects\\Exercises\\src\\IOExercise\\notes3.txt", true))
         {
-           // запись всей строки
+           // запись всей строки hi
             String text = "ћама мыла раму, раму мыла мама";
             writer.write(text);
             // запись по символам
