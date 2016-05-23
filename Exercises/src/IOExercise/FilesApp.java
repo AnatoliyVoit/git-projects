@@ -39,7 +39,7 @@ public class FilesApp {
             writer.write(text);
             // запись по символам
             writer.append('\n');
-            writer.append('E');
+            writer.append("knite2332@gmail.com");
              
             writer.flush();
         }
