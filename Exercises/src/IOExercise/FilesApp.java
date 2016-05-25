@@ -35,20 +35,20 @@ public class FilesApp {
 	    return symbols;
 	}
 	
-//	static String generateType(){
-//		int type = generateRandomNumber(3);
-//		String s = null;
-//		if (type == 0){
-//			s = generateDouble();
-//		}
-//		if (type == 1){
-//			s = generateInt();
-//		}
-//		if (type == 3){
-//			s = generateEmail();
-//		}		
-//		return s;
-//	}
+	static String generateType(){
+		int type = generateRandomNumber(3);
+		String s = null;
+		if (type == 0){
+			s = generateDouble();
+		}
+		if (type == 1){
+			s = generateInt();
+		}
+		if (type == 2){
+			s = generateEmail();
+		}		
+		return s;
+	}
 	
 	static String generateDouble(){
 		double number = Math.random()*100;
@@ -70,13 +70,14 @@ public class FilesApp {
 			account[i] = symbols[generateRandomNumber(symbols.length-1)];
 		}
 		String[] direct = new String [] {"mail.ru", "gmail.com", "tut.by", "yahoo.com", "bk.ru"};
-		String email = account.toString() + "@" + direct[generateRandomNumber(direct.length-1)];
+		String acc = new String(account);
+		String email = acc + "@" + direct[generateRandomNumber(direct.length-1)];
 		return email;
 	}
  
     public static void main(String[] args) {
     	// создадим новый файл
-        File newFile = new File("D:\\Students\\Anatoliy\\git\\git-projects\\Exercises\\src\\IOExercise\\notes3.txt");
+        File newFile = new File("D:\\Java\\git final\\git-projects\\Exercises\\src\\IOExercise\\notes3.txt");
         try
         {
             boolean created = newFile.createNewFile();
@@ -88,7 +89,7 @@ public class FilesApp {
             System.out.println(ex.getMessage());
         }        
         
-        try(FileWriter writer = new FileWriter("D:\\Students\\Anatoliy\\git\\git-projects\\Exercises\\src\\IOExercise\\notes3.txt", false))
+        try(FileWriter writer = new FileWriter("D:\\Java\\git final\\git-projects\\Exercises\\src\\IOExercise\\notes3.txt", false))
         {
            // запись всей строки
             String text = "ћама мыла раму, раму мыла мама";
@@ -105,11 +106,11 @@ public class FilesApp {
         } 
         
         for (int i = 0; i < 50; i++) {			
-	        try(FileWriter writer = new FileWriter("D:\\Students\\Anatoliy\\git\\git-projects\\Exercises\\src\\IOExercise\\notes3.txt", true))
+	        try(FileWriter writer = new FileWriter("D:\\Java\\git final\\git-projects\\Exercises\\src\\IOExercise\\notes3.txt", true))
 	        {
 	        	
 	           // запись всей строки
-	        	String s = generateEmail();	
+	        	String s = generateType();	
 	            writer.write(s);
 	            System.out.println(s);
 	            // запись по символам
