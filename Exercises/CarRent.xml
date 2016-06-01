@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<carRent>
+	<users>
+		<user id="1">User1
+			<orders>
+				<order number="1">
+					<car>Audi</car>
+					<model>A 100</model>
+					<totalAmount>150</totalAmount>
+					<startDate>01.10.2015</startDate>
+					<endDate>01.11.2015</endDate>
+				</order>
+				<order number="2">
+					<car>Audi</car>
+					<model>A4</model>
+					<totalAmount>150</totalAmount>
+					<startDate>14.10.2015</startDate>
+					<endDate>01.12.2015</endDate>
+				</order>
+				<order number="3">
+					<car>Ford</car>
+					<model>Mondeo</model>
+					<totalAmount>240</totalAmount>
+					<startDate>11.11.2015</startDate>
+					<endDate>18.12.2015</endDate>
+				</order>
+				<order number="4">
+					<car>Nissan</car>
+					<model>X-trail</model>
+					<totalAmount>380</totalAmount>
+					<startDate>11.01.2016</startDate>
+					<endDate>23.02.2015</endDate>
+				</order>
+				<order number="5">
+					<car>Kia</car>
+					<model>Rio</model>
+					<totalAmount>260</totalAmount>
+					<startDate>02.03.2016</startDate>
+					<endDate>18.05.2016</endDate>
+				</order>
+			</orders>
+		</user>
+		<user id="2">User2
+			<orders>
+				<order number="1">
+					<car>Audi</car>
+					<model>A 100</model>
+					<totalAmount>150</totalAmount>
+					<startDate>01.10.2015</startDate>
+					<endDate>01.11.2015</endDate>
+				</order>
+				<order number="2">
+					<car>Audi</car>
+					<model>A4</model>
+					<totalAmount>150</totalAmount>
+					<startDate>14.10.2015</startDate>
+					<endDate>01.12.2015</endDate>
+				</order>
+				<order number="3">
+					<car>Ford</car>
+					<model>Mondeo</model>
+					<totalAmount>240</totalAmount>
+					<startDate>11.11.2015</startDate>
+					<endDate>18.12.2015</endDate>
+				</order>
+				<order number="4">
+					<car>Nissan</car>
+					<model>X-trail</model>
+					<totalAmount>380</totalAmount>
+					<startDate>11.01.2016</startDate>
+					<endDate>23.02.2015</endDate>
+				</order>
+				<order number="5">
+					<car>Kia</car>
+					<model>Rio</model>
+					<totalAmount>260</totalAmount>
+					<startDate>02.03.2016</startDate>
+					<endDate>18.05.2016</endDate>
+				</order>
+			</orders>
+		</user>
+		<user id="3">User3
+			<orders>
+				<order number="1">
+					<car>Audi</car>
+					<model>A 100</model>
+					<totalAmount>150</totalAmount>
+					<startDate>01.10.2015</startDate>
+					<endDate>01.11.2015</endDate>
+				</order>
+				<order number="2">
+					<car>Audi</car>
+					<model>A4</model>
+					<totalAmount>150</totalAmount>
+					<startDate>14.10.2015</startDate>
+					<endDate>01.12.2015</endDate>
+				</order>
+				<order number="3">
+					<car>Ford</car>
+					<model>Mondeo</model>
+					<totalAmount>240</totalAmount>
+					<startDate>11.11.2015</startDate>
+					<endDate>18.12.2015</endDate>
+				</order>
+				<order number="4">
+					<car>Nissan</car>
+					<model>X-trail</model>
+					<totalAmount>380</totalAmount>
+					<startDate>11.01.2016</startDate>
+					<endDate>23.02.2015</endDate>
+				</order>
+				<order number="5">
+					<car>Kia</car>
+					<model>Rio</model>
+					<totalAmount>260</totalAmount>
+					<startDate>02.03.2016</startDate>
+					<endDate>18.05.2016</endDate>
+				</order>
+			</orders>
+		</user>
+		<user id="4">User4
+			<orders>
+				<order number="1">
+					<car>Audi</car>
+					<model>A 100</model>
+					<totalAmount>150</totalAmount>
+					<startDate>01.10.2015</startDate>
+					<endDate>01.11.2015</endDate>
+				</order>
+				<order number="2">
+					<car>Audi</car>
+					<model>A4</model>
+					<totalAmount>150</totalAmount>
+					<startDate>14.10.2015</startDate>
+					<endDate>01.12.2015</endDate>
+				</order>
+				<order number="3">
+					<car>Ford</car>
+					<model>Mondeo</model>
+					<totalAmount>240</totalAmount>
+					<startDate>11.11.2015</startDate>
+					<endDate>18.12.2015</endDate>
+				</order>
+				<order number="4">
+					<car>Nissan</car>
+					<model>X-trail</model>
+					<totalAmount>380</totalAmount>
+					<startDate>11.01.2016</startDate>
+					<endDate>23.02.2015</endDate>
+				</order>
+				<order number="5">
+					<car>Kia</car>
+					<model>Rio</model>
+					<totalAmount>260</totalAmount>
+					<startDate>02.03.2016</startDate>
+					<endDate>18.05.2016</endDate>
+				</order>
+			</orders>
+		</user>
+		<user id="5">User5
+			<orders>
+				<order number="1">
+					<car>Audi</car>
+					<model>A 100</model>
+					<totalAmount>150</totalAmount>
+					<startDate>01.10.2015</startDate>
+					<endDate>01.11.2015</endDate>
+				</order>
+				<order number="2">
+					<car>Audi</car>
+					<model>A4</model>
+					<totalAmount>150</totalAmount>
+					<startDate>14.10.2015</startDate>
+					<endDate>01.12.2015</endDate>
+				</order>
+				<order number="3">
+					<car>Ford</car>
+					<model>Mondeo</model>
+					<totalAmount>240</totalAmount>
+					<startDate>11.11.2015</startDate>
+					<endDate>18.12.2015</endDate>
+				</order>
+				<order number="4">
+					<car>Nissan</car>
+					<model>X-trail</model>
+					<totalAmount>380</totalAmount>
+					<startDate>11.01.2016</startDate>
+					<endDate>23.02.2015</endDate>
+				</order>
+				<order number="5">
+					<car>Kia</car>
+					<model>Rio</model>
+					<totalAmount>260</totalAmount>
+					<startDate>02.03.2016</startDate>
+					<endDate>18.05.2016</endDate>
+				</order>
+			</orders>
+		</user>
+			
+	</users>
+</carRent>
