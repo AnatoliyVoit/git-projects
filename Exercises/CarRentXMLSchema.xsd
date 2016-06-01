@@ -1,3 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/CarRentXMLSchema" xmlns:tns="http://www.example.org/CarRentXMLSchema" elementFormDefault="qualified">
-</schema>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="carRent" type="carRentType"/>
+  <xs:complexType name="orderType">
+    <xs:sequence>
+      <xs:element name="car">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Audi"/>
+            <xs:enumeration value="Ford"/>
+            <xs:enumeration value="Nissan"/>
+            <xs:enumeration value="Kia"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="model">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="A 100"/>
+            <xs:enumeration value="A4"/>
+            <xs:enumeration value="Mondeo"/>
+            <xs:enumeration value="X-trail"/>
+            <xs:enumeration value="Rio"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="totalAmount">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="150"/>
+            <xs:enumeration value="240"/>
+            <xs:enumeration value="380"/>
+            <xs:enumeration value="260"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="startDate">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="01.10.2015"/>
+            <xs:enumeration value="14.10.2015"/>
+            <xs:enumeration value="11.11.2015"/>
+            <xs:enumeration value="11.01.2016"/>
+            <xs:enumeration value="02.03.2016"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="endDate">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="01.11.2015"/>
+            <xs:enumeration value="01.12.2015"/>
+            <xs:enumeration value="18.12.2015"/>
+            <xs:enumeration value="23.02.2015"/>
+            <xs:enumeration value="18.05.2016"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="number" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="carRentType">
+    <xs:sequence>
+      <xs:element type="usersType" name="users"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="usersType">
+    <xs:sequence>
+      <xs:element type="userType" name="user" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="userType" mixed="true">
+    <xs:sequence>
+      <xs:element type="ordersType" name="orders"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="id" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="ordersType">
+    <xs:sequence>
+      <xs:element type="orderType" name="order" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
